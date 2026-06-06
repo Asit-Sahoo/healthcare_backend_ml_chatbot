@@ -1,0 +1,105 @@
+# =========================
+# NODE MODULES
+# =========================
+node_modules/
+**/node_modules/
+
+# =========================
+# PYTHON VIRTUAL ENV
+# =========================
+venv/
+.venv/
+env/
+ENV/
+**/venv/
+**/.venv/
+
+# =========================
+# PYTHON CACHE
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# ENV FILES
+# =========================
+.env
+.env.local
+.env.production
+config.env
+*.env
+
+# =========================
+# BUILD FILES
+# =========================
+build/
+dist/
+frontend/build/
+coverage/
+
+# =========================
+# LOG FILES
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITOR FILES
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# SESSION FILES
+# =========================
+sessions/
+flask_session/
+
+# =========================
+# UPLOADS
+# =========================
+uploads/
+
+# =========================
+# RENDER
+# =========================
+.render/
+
+# =========================
+# FLASK CACHE
+# =========================
+flask/__pycache__/
+Disease-Symptom-Prediction-Chatbot-main/venv/
+Disease-Symptom-Prediction-Chatbot-main/__pycache__/
+
+# =========================
+# JUPYTER
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# DATABASE FILES
+# =========================
+*.sqlite3
+*.db
+
+# =========================
+# TEMP FILES
+# =========================
+temp/
+tmp/
+# =========================
+# FRONTEND
+# =========================
+
+frontend/
