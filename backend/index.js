@@ -448,14 +448,16 @@ const mlApi = spawn("python", ["app.py"], {
 // Start Chatbot Flask API
 // =============================
 
-const chatbotApi = spawn("python", ["app.py"], {
-  cwd: path.join(
-    __dirname,
-    "../Disease-Symptom-Prediction-Chatbot-main"
-  ),
-  stdio: "inherit",
-  shell: true,
-});
+setTimeout(() => {
+  spawn("python", ["app.py"], {
+    cwd: path.join(
+      __dirname,
+      "../Disease-Symptom-Prediction-Chatbot-main"
+    ),
+    stdio: "inherit",
+    shell: true,
+  });
+}, 5000);
 
 // =============================
 // Logs
