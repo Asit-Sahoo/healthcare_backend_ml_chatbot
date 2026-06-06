@@ -419,8 +419,10 @@ app.get('/get', async (req, res) => {
     res.setHeader('Set-Cookie', flaskResponse.headers['set-cookie'] || []);
     res.json(flaskResponse.data);
   } catch (error) {
-    console.error('Error communicating with Flask:', error);
-    res.status(500).send('Error communicating with Flask');
+      console.error(
+    "Chatbot Error:",
+    error.response?.data || error.message
+    );
   }
 });
 
