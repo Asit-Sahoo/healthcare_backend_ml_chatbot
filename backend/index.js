@@ -413,6 +413,7 @@ app.get('/get', async (req, res) => {
       headers: {
         Cookie: req.headers.cookie, // Forward cookies
       },
+      timeout: 120000
     });
 
     // Send Flask's response back to React
@@ -448,16 +449,14 @@ const mlApi = spawn("python", ["app.py"], {
 // Start Chatbot Flask API
 // =============================
 
-setTimeout(() => {
-  spawn("python", ["app.py"], {
-    cwd: path.join(
-      __dirname,
-      "../Disease-Symptom-Prediction-Chatbot-main"
-    ),
-    stdio: "inherit",
-    shell: true,
-  });
-}, 5000);
+const chatbotApi = spawn("python", ["app.py"], {
+  cwd: path.join(
+    __dirname,
+    "../Disease-Symptom-Prediction-Chatbot-main"
+  ),
+  stdio: "inherit",
+  shell: true,
+});
 
 // =============================
 // Logs
