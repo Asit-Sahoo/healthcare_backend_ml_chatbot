@@ -318,7 +318,11 @@ app.post("/api/general", async (req, res) => {
       `${process.env.FLASK_API_URL}/predict`,
       {
         symptoms,
-      });
+      },
+      {
+        timeout: 120000, // 2 minutes
+      }
+    );
 
     // 2. Normalize the response
     const normalizedData = (Array.isArray(flaskResponse.data)
