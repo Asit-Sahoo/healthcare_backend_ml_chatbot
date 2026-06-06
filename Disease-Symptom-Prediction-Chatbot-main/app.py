@@ -12,6 +12,10 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 from werkzeug.middleware.proxy_fix import ProxyFix
 import os
+import nltk
+
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 load_dotenv("config.env")
 
